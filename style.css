@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:
+    radial-gradient(50% 50% at 100% 0,#000000 0%  5% ,#ffffff 6%  15%,#000000 16% 25%,#ffffff 26% 35%,#000000 36% 45%,
+     #ffffff 46% 55%,#000000 56% 65%,#ffffff 66% 75%,#000000 76% 85%,#ffffff 86% 95%,
+     #0000 96%),
+    radial-gradient(50% 50% at 0 100%,#000000 0%  5% ,#ffffff 6%  15%,#000000 16% 25%,#ffffff 26% 35%,#000000 36% 45%,
+     #ffffff 46% 55%,#000000 56% 65%,#ffffff 66% 75%,#000000 76% 85%,#ffffff 86% 95%,
+     #0000 96%),
+    radial-gradient(50% 50%,#000000 0%  5% ,#ffffff 6%  15%,#000000 16% 25%,#ffffff 26% 35%,#000000 36% 45%,
+     #ffffff 46% 55%,#000000 56% 65%,#ffffff 66% 75%,#000000 76% 85%,#ffffff 86% 95%,
+     #0000 96%),
+    radial-gradient(50% 50%,#000000 0%  5% ,#ffffff 6%  15%,#000000 16% 25%,#ffffff 26% 35%,#000000 36% 45%,
+     #ffffff 46% 55%,#000000 56% 65%,#ffffff 66% 75%,#000000 76% 85%,#ffffff 86% 95%,
+     #0000 96%) 28px 28px;
+background-size: 56px 56px;
+background-color: #000000;
+}
+
+.container{
+    max-width: 400px;
+    width: 85%;
+    background: rgba(106, 103, 103, 0.863);
+    box-shadow: 0 0 30px 15px rgb(117, 115, 115);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 4px groove #FFFFFF;
+    
+}
+
+.displays{
+    background: black;
+    height: 100px;
+    width: 100%;
+    padding: 1.2rem;
+    text-align: right;
+    font-size: 1.5rem;
+    color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    position: relative;
+    
+    
+}
+
+.display-1{
+    color: grey;
+    font-size: 1.2rem;
+}
+
+
+.tempResult{
+    color:lightgrey;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 0.8rem;
+}
+
+.all-buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 1rem;
+    background: black;
+
+}
+
+.buttons > div{
+    border: 1px solid rgb(27, 26, 26);
+}
+
+.button{
+    border: 0.5px solid rgba(63, 58, 58, 0.759);
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+    background: grey;
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+}
+
+.button:hover{
+    background: white;
+    color: #000000;
+}
+
+.equal{
+    grid-column: span 2;
+    font-weight: bolder;
+    font-size: 2rem;
+    width: 180px;
+    border-radius: 50px;
+}
+
+.orange{
+    background: orange;
+    color: white;
+}
+
+/* mobile screen */
+/* max width */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+    section{
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .all-buttons{
+        padding: 0.2rem;
+    }
+
+    .button{
+        height: 70px;
+        width: 70px;
+        margin: 0.1rem;
+
+    }
+
+    .equal{
+    
+        width: 140px;
+        
+    }
+}
