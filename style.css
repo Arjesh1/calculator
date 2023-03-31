@@ -10,31 +10,20 @@ section{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background:
-    radial-gradient(50% 50% at 100% 0,#000000 0%  5% ,#ffffff 6%  15%,#000000 16% 25%,#ffffff 26% 35%,#000000 36% 45%,
-     #ffffff 46% 55%,#000000 56% 65%,#ffffff 66% 75%,#000000 76% 85%,#ffffff 86% 95%,
-     #0000 96%),
-    radial-gradient(50% 50% at 0 100%,#000000 0%  5% ,#ffffff 6%  15%,#000000 16% 25%,#ffffff 26% 35%,#000000 36% 45%,
-     #ffffff 46% 55%,#000000 56% 65%,#ffffff 66% 75%,#000000 76% 85%,#ffffff 86% 95%,
-     #0000 96%),
-    radial-gradient(50% 50%,#000000 0%  5% ,#ffffff 6%  15%,#000000 16% 25%,#ffffff 26% 35%,#000000 36% 45%,
-     #ffffff 46% 55%,#000000 56% 65%,#ffffff 66% 75%,#000000 76% 85%,#ffffff 86% 95%,
-     #0000 96%),
-    radial-gradient(50% 50%,#000000 0%  5% ,#ffffff 6%  15%,#000000 16% 25%,#ffffff 26% 35%,#000000 36% 45%,
-     #ffffff 46% 55%,#000000 56% 65%,#ffffff 66% 75%,#000000 76% 85%,#ffffff 86% 95%,
-     #0000 96%) 28px 28px;
-background-size: 56px 56px;
-background-color: #000000;
+    background:url(./assets/scattered-forcefields.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container{
     max-width: 400px;
     width: 85%;
     background: rgba(106, 103, 103, 0.863);
-    box-shadow: 0 0 30px 15px rgb(117, 115, 115);
-    border-radius: 20px;
+    box-shadow: 0 0 30px 15px rgb(94, 91, 91);
+    border-radius: 50px;
     overflow: hidden;
-    border: 4px groove #FFFFFF;
+    border: 5px groove #FFFFFF;
     
 }
 
